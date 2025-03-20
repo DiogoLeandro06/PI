@@ -20,17 +20,17 @@ int main(){
     pthread_t t1, t2;
 
     if (pthread_create(&t1,NULL,&printx,NULL)){
-        printf("Erro ao iniciar thread 1\n");
+        printf("Error starting thread 1\n");
     }
     if (pthread_create(&t2,NULL,&sum2,NULL)){
-        printf("Erro ao iniciar thread 2\n");
+        printf("Error starting thread 2\n");
     }
 
     if (pthread_join(t1, NULL)){
-        printf("Erro na thread 1\n");
+        printf("Error waiting for thread 1\n");
     }
     if (pthread_join(t2, NULL)){
-        printf("Erro na thread 2\n");
+        printf("Error waiting for thread 2\n");
     }
     
     

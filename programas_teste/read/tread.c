@@ -13,7 +13,7 @@ int main(int argc, char ** argv){
     int file_id = open(argv[1],O_RDONLY);
 
     if (file_id == -1){
-        printf("Erro ao abrir o ficheiro %s\n",argv[1]);
+        printf("Error opening file %s\n",argv[1]);
         printf("%s\n",strerror(errno));
         return 0;
     }
@@ -24,18 +24,17 @@ int main(int argc, char ** argv){
     ssize_t bytes_r = read(file_id,buffer, 256);
 
     if(bytes_r < 0){
-        printf("Erro ao ler o ficheiro\n");
+        printf("Erro reading file %s\n",argv[1]);
         printf("%s\n",strerror(errno));
     }
     else {
-        printf("Leitura de %zd bytes:\n%s",bytes_r,buffer);
+        printf("%zd bytes read:\n%s",bytes_r,buffer);
     }
    
     int close_s = close(file_id);
     
     if (close_s != 0){
         printf("Error closing file %s\n",argv[1]);
-        //system("errno",errno)
         return 0;
     }
 
