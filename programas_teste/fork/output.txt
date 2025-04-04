@@ -1,0 +1,8 @@
+NOTA: O comportamento do programa pode variar entre execuções devido a condições de corrida entre os processos. Isto significa que a ordem de execução dos processos não é garantida, podendo resultar em diferentes sequências de saída.
+337
+337
+337
+[root@milkv-duo]~# 339
+338
+338
+340
