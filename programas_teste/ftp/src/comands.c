@@ -71,7 +71,7 @@ int read_response(FILE *fl) {
 
 
 int read_response_pasv(FILE * fl, char ip[32], int * port){
-    char * buf;
+    char * buf = NULL;
     size_t bytes = 0;
     bytes = getline(&buf, &bytes, fl);
     buf[bytes] = '\0';
