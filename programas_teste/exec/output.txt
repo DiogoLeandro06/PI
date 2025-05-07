@@ -1,0 +1,14 @@
+Teste de execução do comando ls -l
+gcc-14.2.0
+gcc-14.2.0.tar.gz
+helloworld
+nano-8.3
+nano-8.3.tar.xz
+texec_duos
+tfork_duos
+tmutex_duos
+tpid_duos
+tpipe_duos
+tread_duos
+tthread_duos
+twrite_duos
