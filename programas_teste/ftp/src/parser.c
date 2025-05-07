@@ -8,8 +8,6 @@
 
 
 int parse_data(Data_ * info, const char * arg){
-
-
     int control = 1;
     size_t len = strlen(arg);
     if (len > 6) {
