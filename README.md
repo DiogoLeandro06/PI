@@ -59,7 +59,7 @@ De seguida, apresentamos os programas desenvolvidos, as chamadas de sistema test
 Este programa executa o comando `ls -l` através da chamada da função `execl`.
 
 
-#### Output Esperado
+#### Resultado Esperado
 
 Espera-se a listagem dos ficheiros presentes no directório onde o programa é executado.
 
